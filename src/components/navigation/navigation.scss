@@ -1,0 +1,40 @@
+$headingFont: 'Montserrat', sans-serif;
+$mainFont: 'Lato', sans-serif;
+
+
+.main-nav {
+    display: flex;
+    flex-flow: column;
+    background-color: whitesmoke;
+    font-size: 18px;
+
+}
+
+.nav-title h2 {
+    display: flex;
+    justify-content: center;
+    padding: .5em;
+    font-family: $headingFont;
+    font-size: 4em;
+    letter-spacing: -3px;
+    text-transform: uppercase;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    padding: .5em;
+
+}
+
+.filter-nav {
+    display:flex;
+    padding:0;
+}
+.filter-nav li {
+    padding: 1em
+}
+.action-nav {
+    padding-right: 3em;
+}
+
