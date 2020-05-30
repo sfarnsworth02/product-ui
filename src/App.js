@@ -1,24 +1,14 @@
 import React from 'react';
 import './App.scss';
-import Logo from './components/Logo';
-import Account from './components/Account';
-import Products from './pages/Product';
-import Footer from './components/Footer';
+import Page from './components/Page';
+import Product from './pages/product/Product';
 
-function App(props) {
+function App() {
   return (
-    <section className="page-wrapper">
-      <header className="header-container">
-        <Logo />
-        <Account />
-      </header>
-      <main>
-        <Products />
-      </main>
-      <footer className="main-footer">
-        <Footer />
-      </footer>
-    </section>
+    <Page>
+      <Product />
+    </Page>
+
   )}
 
 export default App;

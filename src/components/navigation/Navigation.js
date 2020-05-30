@@ -13,7 +13,8 @@ export default class Navigation extends RC {
         return(
             <div className='main-nav'>
                 <div className='nav-title'>
-                    <h2>Products</h2>   
+                    <h2>Products</h2> 
+                      {/* this will be dynamic based on   */}
                 </div>
                 <div className='nav-container'>
                     <ul className='filter-nav'>

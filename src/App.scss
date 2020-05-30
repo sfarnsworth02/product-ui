@@ -3,10 +3,16 @@ $mainFont: 'Lato', sans-serif;
 
 .page-wrapper {
     margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-flow: column;
     font-family: $mainFont;
 }
 // ------ Header ------
 .header-container {
+    border-bottom: 3px solid gray;
+}
+.main-header {
     display: flex;
     flex-flow: row;
     justify-content: space-between;
@@ -22,11 +28,6 @@ $mainFont: 'Lato', sans-serif;
 }
 .account-container {
     line-height: 100%; 
-}
-
-// ------ Main ------
-.page-content {
-    background-color: #F6F1DE;
 }
 
 // ------ Login ------
@@ -55,10 +56,17 @@ form > div > label{
 
 
 
+// ------ Main ------
+.content {
+    flex: 1;
+    background-color: #F6F1DE;
+
+}
+
 // ------ Footer ------
 .main-footer {
     display:flex;
-    flex:row;
+    flex-flow:row;
     text-decoration: none;
     justify-content: center;
     padding: 1em 2em;

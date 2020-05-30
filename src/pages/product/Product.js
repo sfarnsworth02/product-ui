@@ -1,8 +1,8 @@
 import React, { Component as RC } from 'react';
-import PageContent from '../components/PageContent';
-import Card from '../components/card/Card';
+import './product.scss';
+import Card from '../../components/card/Card';
 
-export default class ProductHome extends RC {
+export default class Products extends RC {
     constructor(props)
     {
         super(props);
@@ -13,15 +13,16 @@ export default class ProductHome extends RC {
     {
         return(
             <div>
-                <PageContent />
-                <input type='text' value='product search' />
-                <span>Clear</span>
-                <div className='content-lists'>
+                <div className='search-container'>
+                    <input type='text' />
+                    <span>Clear</span>
+                </div>
+
+                <div className='content-container'>
                     <p>
                         This area will be a list of cards with 
                         a product image and product details
                     </p>
-                    <Card></Card>
                 </div>
             </div>
 
