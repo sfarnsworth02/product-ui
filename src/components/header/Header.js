@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
-import Logo from './Logo';
-import Account from './Account';
-import Nav from '../navigation/Navigation'
+import './header.scss';
+import MainNav from '../navigation/MainNavList';
+import NavAction from '../header/ActionNavList';
 
 
 export default class Header extends Component {
@@ -16,12 +16,28 @@ export default class Header extends Component {
         return (
             <section className='header-container'>
                 <div className='main-header'>
-                    <Logo />
-                    <Account />
+                    <div className='logo-container'>
+                        Studio Catalog
+                    </div>
+                    {/* 
+                    To-do:
+                    this will be a terinary based on if 
+                    user is logged in
+                    If user is logged in it will display
+                    Account instead of Login
+                    */}
+                    <nav className='main-nav'>
+                        <button>Login</button>
+                        <MainNav />
+                    </nav>
                 </div>
-                <div>
-                    <Nav />
+                <div className='page-title'>
+                    <h2>Products</h2> 
+                      {/* this will be dynamic based on   */}
                 </div>
+                <nav className='action-nav'>
+                    <NavAction />
+                </nav>
             </section>
             
         )

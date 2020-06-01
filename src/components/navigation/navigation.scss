@@ -1,6 +1,9 @@
+//  ------ Variables & Elements ------
 $headingFont: 'Montserrat', sans-serif;
 $mainFont: 'Lato', sans-serif;
-
+$chocolate: #605951;
+$blueish: #49708A;
+$lightYellow:#FBEEC2;
 
 .main-nav {
     display: flex;
@@ -9,31 +12,39 @@ $mainFont: 'Lato', sans-serif;
     font-size: 18px;
 }
 
-.nav-title h2 {
-    display: flex;
-    justify-content: center;
-    padding: .5em;
-    font-family: $headingFont;
-    font-size: 4em;
-    letter-spacing: -3px;
-    text-transform: uppercase;
-}
 
 .nav-container {
     display: flex;
     justify-content: space-between;
     padding: .5em;
-
+    align-items: center;
 }
-
+.nav-container ul li:hover {
+    font-size: 19px;
+    font-weight: 700;
+}
+.nav-container ul a {
+    text-decoration: none;
+}
 .filter-nav {
     display:flex;
     padding:0;
 }
 .filter-nav li {
-    padding: 1em
+    padding: 1em;
 }
-.action-nav {
-    padding-right: 3em;
+
+.action-list {
+    // display: none;
+    padding: 0 1em;
 }
+.sub-menu {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+}
+.sub-menu li {
+    border-bottom: 1px solid $blueish;
+}
+
 

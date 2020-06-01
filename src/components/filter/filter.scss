@@ -1,0 +1,12 @@
+.product-filter-container {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    padding: 2em;
+}
+.search-filter {
+    display: flex;
+}
+.search-filter input {
+    line-height: .5em;
+}

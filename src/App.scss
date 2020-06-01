@@ -1,36 +1,43 @@
+
+//  ------ Variables & Elements ------
 $headingFont: 'Montserrat', sans-serif;
 $mainFont: 'Lato', sans-serif;
+$chocolate: #605951;
+$blueish: #49708A;
+$lightYellow:#FBEEC2;
 
+li, a {
+    text-decoration: none;
+    color: $blueish;
+    display: flex;
+    padding: 15px;
+}
+a:hover, li:hover {
+    color: $blueish;
+    font-weight: 600;
+}
+//  ------ PAGE Component------
 .page-wrapper {
     margin: 0;
     height: 100vh;
     display: flex;
     flex-flow: column;
     font-family: $mainFont;
+    color: $chocolate;
 }
-// ------ Header ------
-.header-container {
-    border-bottom: 3px solid gray;
+.content {
+    flex: 1;
 }
-.main-header {
-    display: flex;
-    flex-flow: row;
-    justify-content: space-between;
-    padding:10px 1em;
-    font-family: $headingFont;
-    font-weight: 600;
-    font-variant: small-caps;
-    line-height: 200%;
-    font-size: 20px;
-}
-.logo-container {
-    font-size: 25px;
-}
-.account-container {
-    line-height: 100%; 
+.main-footer {
+    display:flex;
+    flex-flow:row;
+    text-decoration: none;
+    justify-content: center;
+    padding: 1em 2em;
+    background-color: grey;
 }
 
-// ------ Login ------
+// ------ LOGIN Component ------
 .form-login {
     padding: 30px;
 }
@@ -45,33 +52,8 @@ form > div > label{
 .form-login > div > label {
     padding: 20px;
 }
-.form-link {
-    color: #49708A;
-    display: flex;
-    padding: 15px;
-}
-.form-link > a {
-    padding: 20px;
-}
 
 
-
-// ------ Main ------
-.content {
-    flex: 1;
-    background-color: #F6F1DE;
-
-}
-
-// ------ Footer ------
-.main-footer {
-    display:flex;
-    flex-flow:row;
-    text-decoration: none;
-    justify-content: center;
-    padding: 1em 2em;
-    background-color: grey;
-}
 
 .department-links {
     padding: 0 4em;

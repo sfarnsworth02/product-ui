@@ -1,3 +1,4 @@
+$blueish: #49708A;
 
 .search-container {
     display: flex;
@@ -6,8 +7,14 @@
     
 }
 
-.search-container span {
-    padding-left: 1em
+.search-container a {
+    padding-left: 1em;
+    color: $blueish;
+}
+.search-container a:hover {
+    padding-left: 1em;
+    color: $blueish;
+    font-weight: 600;
 }
 
 .content-container {

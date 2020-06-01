@@ -19,7 +19,7 @@ export default class Login extends RC {
                         <input />   
                     </div>
                     <div className='form-link'>
-                        <a href='#'>Forgot password</a>
+                        <a href='#'>Request Access</a>
                         <a href='#'>Clear</a>           
                     </div>
                 </form>
