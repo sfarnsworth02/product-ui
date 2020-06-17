@@ -6,63 +6,68 @@ $chocolate: #605951;
 $blueish: #49708A;
 $lightYellow:#FBEEC2;
 
-li, a {
-    text-decoration: none;
-    color: $blueish;
-    display: flex;
-    padding: 15px;
-}
-a:hover, li:hover {
-    color: $blueish;
-    font-weight: 600;
-}
-//  ------ PAGE Component------
+// li, a {
+//     text-decoration: none;
+//     color: $blueish;
+//     display: flex;
+//     padding: 15px;
+// }
+// a:hover, li:hover {
+//     color: $blueish;
+//     font-weight: 600;
+// }
 .page-wrapper {
     margin: 0;
+    width: 100%;
     height: 100vh;
     display: flex;
     flex-flow: column;
     font-family: $mainFont;
     color: $chocolate;
 }
-.content {
-    flex: 1;
+//  ------ HEADER Component------
+.header {
+    display: block;
+    background-color: #E6F0F0;
+    padding: 3em;
 }
-.main-footer {
-    display:flex;
-    flex-flow:row;
-    text-decoration: none;
-    justify-content: center;
-    padding: 1em 2em;
-    background-color: grey;
+//  ------ PAGE Component------
+.content { 
+    height:100%;
+    width: 100%;
+    margin: 3em;
+    padding: 0 3em 3em;
 }
-
-// ------ LOGIN Component ------
-.form-login {
-    padding: 30px;
+.product-filter-container {
+    padding: 0;
 }
-
-form > div {    
+.login-form {
     display: flex;
-    justify-content: center;
+    flex-flow: column;
+    justify-content: space-around;
+    margin: 5em 15vw;
 }
-form > div > label{
-    padding: 0 10px;
+.form-input {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+    padding: 1em;
 }
-.form-login > div > label {
-    padding: 20px;
+//  ------ FOOTER Component------
+.footer {
+    display: block;
+    background-color: #5F6363;
+    width: 100vw;
 }
+// .main-footer {
+//     display:flex;
+//     flex-flow:row;
+//     justify-content: center;
+//     background-color: lightgray;
+//     padding: 1em;
+// }
+// .footer li {
+//     padding: 4px;
+// }
 
 
-
-.department-links {
-    padding: 0 4em;
-}
-
-.company-links {
-    padding: 0 1em;
-}
-
-li {
-    list-style: none;
-}

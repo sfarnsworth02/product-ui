@@ -21,13 +21,13 @@ export default class Page extends RC {
         return(
 
             <section className="page-wrapper">
-                <header>
-                    <Header />
+                <header className='header'>
+                    <Header title={this.props.title} />
                 </header>
                 <main className='content'>
                     {this.props.children}
                 </main>
-                <footer className="main-footer">
+                <footer className="footer">
                     <Footer />
                 </footer>
             </section>

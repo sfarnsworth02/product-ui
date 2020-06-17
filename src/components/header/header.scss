@@ -5,48 +5,49 @@ $chocolate: #605951;
 $blueish: #49708A;
 $lightYellow:#FBEEC2;
 
-// ------ Row 1 - Main Header ------ 
-.header-container {
-    border-bottom: 3px solid $chocolate;
-    background-color: whitesmoke;
-    display: flex;
-    flex-flow: column;
-}
-.main-header {
-    display: flex;
-    flex-flow: row;
-    justify-content: space-between;
-    padding:10px 1em;
-    font-family: $headingFont;
-    font-weight: 600;
-    font-variant: small-caps;
-    line-height: 200%;
-    font-size: 20px;
-}
-.logo-container {
-    font-size: 25px;
-}
-.main-header button {
-    line-height: 130%; 
-}
+// // ------ Row 1 - Main Header ------ 
+// .header-container {
+//     border-bottom: 3px solid $chocolate;
+//     background-color: whitesmoke;
+//     color: $chocolate;
+//     display: flex;
+//     flex-flow: column;
+//     box-shadow: 1px 2px $chocolate;
+//     width: inherit;
+// }
+
+// .main-header button {
+//     line-height: 130%; 
+// }
+// .menubar-list {
+//     display: flex;
+//     justify-content: flex-end;
+//     padding: 2em;
+// }
+// .menubar-list li {
+//     padding: 0 1.5em;
+// }
 
 
-// ------ Row 2 - Header Title ------ 
-.page-title h2 {
-    display: flex;
-    justify-content: center;
-    padding: .5em;
-    font-family: $headingFont;
-    font-size: 4em;
-    letter-spacing: -3px;
-    text-transform: uppercase;
-}
+// // ------ Row 2 - Header Title ------ 
+// .page-title {
+//     margin: 1em 3em 2em
+// }
+// .page-title h2 {
+//     display: flex;
+//     justify-content: center;
+//     padding: 0;
+//     font-family: $headingFont;
+//     font-size: 4em;
+//     letter-spacing: -3px;
+//     text-transform: uppercase;
+// }
 
-// ------ Row 3 - Action List ------ 
-.action-nav {
-    display: flex;
-    justify-content: flex-end;
-    padding: 0 1em
-}
+// // ------ Row 3 - Action List ------ 
+// .action-nav {
+//     display: flex;
+//     justify-content: flex-end;
+//     padding: 0 1em
+// }
 
 

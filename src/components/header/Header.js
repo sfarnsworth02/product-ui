@@ -1,43 +1,25 @@
 import React, {Component} from 'react';
 import './header.scss';
-import MainNav from '../navigation/MainNavList';
-import NavAction from '../header/ActionNavList';
+import { MenuBar } from '../containers/Menu';
+import Nav from '../navigation/MainNavList';
 
 
 export default class Header extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
 
-        }
-    }
-
-    render() {
+    render() {  
         return (
             <section className='header-container'>
                 <div className='main-header'>
-                    <div className='logo-container'>
-                        Studio Catalog
-                    </div>
-                    {/* 
-                    To-do:
-                    this will be a terinary based on if 
-                    user is logged in
-                    If user is logged in it will display
-                    Account instead of Login
-                    */}
-                    <nav className='main-nav'>
-                        <button>Login</button>
-                        <MainNav />
-                    </nav>
+
+                    <MenuBar>
+                        <ul className='menubar-list'>
+                            <Nav />
+                        </ul>
+                    </MenuBar>
                 </div>
                 <div className='page-title'>
-                    <h2>Products</h2> 
-                      {/* this will be dynamic based on   */}
+                    <h2>{this.props.title}</h2>
                 </div>
-                <nav className='action-nav'>
-                    <NavAction />
-                </nav>
             </section>
             
         )
